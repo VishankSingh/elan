@@ -1,0 +1,104 @@
+.nav-bar {
+    position: fixed;
+    top: 4vh;
+    right: 2vw;
+    z-index: 10;
+    font-size: 1vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    mix-blend-mode: exclusion;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+
+
+.square {
+    position: absolute;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #ffffff;
+    mix-blend-mode: exclusion;
+    z-index: 1;
+    transition: height 0.1s linear;
+}
+
+.nav-link:nth-child(1):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(2):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(3):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(4):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(5):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(6):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(7):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(8):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(9):hover .square {
+    height: 100%;
+}
+.nav-link:nth-child(10):hover .square {
+    height: 100%;
+}
+
+.navDot {
+    scale: 0;
+    transition: scale 0.1s linear;
+}
+
+.navLink:hover .navDot{
+    scale: 1.7;
+}
+
+@media screen and (max-width: 800px) {
+    .navBar {
+        position: fixed;
+        top: 1.3vh;
+        right: 4vw;
+        z-index: 10;
+        font-size: 4vw;
+        font-weight: 300;
+        color: white;
+        mix-blend-mode: difference;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLink {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5vw;
+    }
+
+    .navDot {
+        scale: 0;
+        transition: scale 0.1s linear;
+    }
+
+    .navLink:hover .navDot{
+        scale: 1.2;
+    }
+}
+

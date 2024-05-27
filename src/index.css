@@ -1,0 +1,29 @@
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+::-moz-selection {
+  color: #000000;
+  background: #ffffff;
+}
+
+::selection {
+  color: #000000;
+  background: #ffffff;
+}
+
+#root {
+  overflow: hidden;
+  cursor: none;
+
+}
+
+a {
+  cursor: none !important;
+  text-decoration: none;
+}

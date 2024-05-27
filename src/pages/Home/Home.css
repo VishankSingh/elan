@@ -1,0 +1,121 @@
+
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.hero video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: blur(0vh) brightness(30%);
+}
+
+
+.container {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+.elan {
+    position: relative;
+    top: 1vh;
+    bottom: 0;
+    left: 1vh;
+    height: 0;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff; /*99c4ff*/
+    mix-blend-mode: difference;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 10vw;
+    line-height:20vh;
+    display: flex;
+}
+
+.desc {
+    position: relative;
+    top: 71vh;
+    left: 1vw;
+    width: 33vw;
+    background-color: transparent;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95vw;
+}
+
+
+
+.show-video {
+    position: relative;
+    top: 65vh;
+    left: 1vw;
+    background-color: transparent;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95vw;
+    overflow: hidden;
+    display: flex;
+    height: 5vh;
+    width: fit-content;
+    align-items: center;
+}
+
+.hover-effect-item-child p {
+    position: absolute;
+    height: 50%;
+}
+
+.hover-effect-item-child .play {
+    position: relative;
+}
+
+.rect {
+    position: relative;
+    width: 100vw;
+    height: 66vh;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero video {
+        height: 50vh;
+    }
+
+
+    .container {
+        height: 50vh;
+    }
+
+    .elan {
+        top: 2vh;
+        font-size: 35vw;
+        line-height:10vh;
+    }
+
+    .desc {
+        position: relative;
+        top: 20vh;
+        left: 2vw;
+        width: 75vw;
+        font-size: 3vw;
+    }
+
+}

@@ -1,0 +1,30 @@
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    z-index: 9999;
+    background-color: #ffffff; /*99c4ff*/
+    mix-blend-mode: exclusion;
+    border-radius: 50%;
+    height: 0.35vw;
+    width: 0.35vw;
+}
+
+#click-id {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 1vw;
+    z-index: 100;
+    mix-blend-mode: exclusion;
+    color: white;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 800px) {
+    .cursor {
+        display: ;
+    }
+}
+
