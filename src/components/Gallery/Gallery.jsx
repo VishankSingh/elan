@@ -48,13 +48,13 @@ function Gallery() {
 
   function handleImageClick(e) {
     const imgSrc = e.target.src
-    //console.log(imgSrc)
+    console.log(imgSrc)
 
     const imgNumber = imgSrc.match(/(\d+)\.jpg/)[1]
     galleryContainerRef.current.style.backgroundColor = colorArray[parseInt(imgNumber) - 1]
 
     const newImgSrc = `https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/${imgNumber}.jpg`
-    //console.log(newImgSrc)
+    console.log(newImgSrc)
 
 
     const previewContainer = document.querySelector(".preview-container")
