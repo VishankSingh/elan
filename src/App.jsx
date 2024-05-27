@@ -14,7 +14,7 @@ function App() {
     <ReactLenis root>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<>
+          <Route exact path="/elan" element={<>
             <CustomCursor/>
             <Navbar/>
             <Home/>

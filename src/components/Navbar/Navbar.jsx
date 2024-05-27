@@ -24,7 +24,7 @@ function Navbar() {
     <div className="nav-bar">
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Home&nbsp;</div>
         </a>
