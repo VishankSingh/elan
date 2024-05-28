@@ -32,7 +32,7 @@ function Navbar() {
 
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Events&nbsp;</div>
         </a>
@@ -40,7 +40,7 @@ function Navbar() {
 
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Competitions&nbsp;</div>
         </a>
@@ -48,7 +48,7 @@ function Navbar() {
 
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Cryptex&nbsp;</div>
         </a>
@@ -56,7 +56,7 @@ function Navbar() {
 
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Workshops&nbsp;</div>
         </a>
@@ -64,7 +64,7 @@ function Navbar() {
 
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Accommodation&nbsp;</div>
         </a>
@@ -72,7 +72,7 @@ function Navbar() {
 
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Social Cause&nbsp;</div>
         </a>
@@ -80,7 +80,7 @@ function Navbar() {
 
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Sponsors&nbsp;</div>
         </a>
@@ -88,7 +88,7 @@ function Navbar() {
 
       <div className="nav-link">
 
-        <a href="/">
+        <a href="/elan">
           <div className="square"></div>
           <div className="nav-link-text">&nbsp;Team&nbsp;</div>
         </a>
