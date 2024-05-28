@@ -48,27 +48,21 @@ function Gallery() {
 
   function handleImageClick(e) {
     const imgSrc = e.target.src
-    console.log(imgSrc)
+    //console.log(imgSrc)
 
     const imgNumber = imgSrc.match(/(\d+)\.jpg/)[1]
     galleryContainerRef.current.style.backgroundColor = colorArray[parseInt(imgNumber) - 1]
 
-    const newImgSrc = `https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/${imgNumber}.jpg`
-    console.log(newImgSrc)
-
-
     const previewContainer = document.querySelector(".preview-container")
 
     const currentLastImg = previewContainer.querySelector("img:last-child")
-
-
 
     if (currentLastImg) {
       gsap.to(currentLastImg, {duration: 1, scale: 1.5, left: "-70%", ease: "expo.out"})
     }
 
     const newImg = document.createElement("img")
-    newImg.src = newImgSrc
+    newImg.src = imgSrc
     newImg.style.position = "absolute"
     newImg.style.right = "-100%"
 
@@ -100,25 +94,25 @@ function Gallery() {
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>1.</p></div>
             <div className="img" >
-              <img src={img1} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/1.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>2.</p></div>
             <div className="img">
-              <img src={img2} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/2.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>3.</p></div>
             <div className="img">
-              <img src={img3} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/3.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>4.</p></div>
             <div className="img">
-              <img src={img4} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/4.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
         </div>
@@ -126,25 +120,25 @@ function Gallery() {
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>5.</p></div>
             <div className="img">
-              <img src={img5} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/5.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>6.</p></div>
             <div className="img">
-              <img src={img6} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/6.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>7.</p></div>
             <div className="img">
-              <img src={img7} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/7.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>8.</p></div>
             <div className="img">
-              <img src={img8} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/8.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
         </div>
@@ -152,25 +146,25 @@ function Gallery() {
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>9.</p></div>
             <div className="img">
-              <img src={img9} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/9.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>10.</p></div>
             <div className="img">
-              <img src={img10} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/10.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>11.</p></div>
             <div className="img">
-              <img src={img11} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/11.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>12.</p></div>
             <div className="img">
-              <img src={img12} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/12.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
         </div>
@@ -178,32 +172,32 @@ function Gallery() {
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>13.</p></div>
             <div className="img">
-              <img src={img13} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/13.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>14.</p></div>
             <div className="img">
-              <img src={img14} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/14.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>15.</p></div>
             <div className="img">
-              <img src={img15} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/15.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
           <div className="item" onClick={() => handleImageClick(event)}>
             <div className="index"><p>16.</p></div>
             <div className="img">
-              <img src={img16} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
+              <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/16.jpg"} alt="" onMouseEnter={handleImgHoverIn} onMouseLeave={handleImgHoverOut} />
             </div>
           </div>
         </div>
       </div>
       <div className="preview">
         <div className="preview-container">
-          <img src={img1} alt=""/>
+          <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/1.jpg"} alt=""/>
         </div>
       </div>
     </div>
