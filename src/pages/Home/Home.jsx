@@ -19,7 +19,6 @@ function Home() {
   const lettersRef = useRef(null)
   const showVideoRef = useRef(null)
 
-
   useGSAP(() => {
     const tl = gsap.timeline({paused: false})
     tl.from(".elan-letters", {
@@ -44,10 +43,7 @@ function Home() {
       opacity: 0,
       ease: "linear",
     }, "<")
-
-
   })
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,20 +69,14 @@ function Home() {
     };
   }, []);
 
-
-
-
-
   return (
-    <ReactLenis root>
+    <>
       <div className="hero">
-
         <video autoPlay loop muted disablePictureInPicture
                src={themeVideo} className="theme-vid" ref={themeVidRef}
         ></video>
-
-
         <div className="container">
+
           <div className="elan" ref={lettersRef}>
             <div className="elan-letters">e</div>
             <div className="elan-letters">l</div>
@@ -103,13 +93,12 @@ function Home() {
           </div>
 
           <a href={"https://www.youtube.com/watch?v=up8GN4jvgwQ"} target={"_blank"} className={"hover-effect-item"}>
-
-
             <div className="show-video hover-effect-item-child" ref={showVideoRef}>
               <div className={"play"}>&#9656;&nbsp;</div>
               <LinkHover text={"show theme video"} class={"show-theme-video"}/>
             </div>
           </a>
+
           <div className="desc" ref={descRef}>
             Elan and ηVision is the annual techno-cultural fest of IIT Hyderabad and is one of the
             largest fests in South India. It is entirely organized by IITH students. Elan refers to the cultural part
@@ -120,12 +109,8 @@ function Home() {
         </div>
       </div>
       <Gallery/>
-
-    </ReactLenis>
-
+    </>
   )
 }
-/*
-      <div className="rect"></div>
-      */
+
 export default Home;

@@ -5,6 +5,11 @@
   box-sizing: border-box;
   color: white;
   font-family: "Poppins", sans-serif;
+
+}
+
+body {
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -20,7 +25,6 @@
 #root {
   overflow: hidden;
   cursor: none;
-
 }
 
 a {

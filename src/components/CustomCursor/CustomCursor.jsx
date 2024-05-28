@@ -5,10 +5,7 @@ import {useGSAP} from "@gsap/react";
 
 const CustomCursor = () => {
   const cursorRef = useRef(null);
-  const clickRef = useRef(null);
-
   const [isHovered, setIsHovered] = useState(null);
-
 
   useGSAP(() => {
     if (isHovered === true) {
@@ -24,7 +21,6 @@ const CustomCursor = () => {
     }
   }, [isHovered]);
 
-
   useEffect(() => {
     const handleMouseMove = (e) => {
       const x = e.clientX - cursorRef.current.offsetWidth / 2 - window.innerWidth / 2;
@@ -38,25 +34,8 @@ const CustomCursor = () => {
     };
 
     window.addEventListener('mousemove', handleMouseMove);
-
     return () => window.removeEventListener('mousemove', handleMouseMove);
   });
-
-  useEffect(() => {
-    const handleMouseTextMove = (e) => {
-      const x = e.clientX + cursorRef.current.offsetWidth;
-      const y = e.clientY;
-      gsap.to(clickRef.current, {
-        x: x,
-        y: y,
-        duration: 0.1,
-      })
-    }
-
-    window.addEventListener('mousemove', handleMouseTextMove);
-
-    return () => window.removeEventListener('mousemove', handleMouseTextMove);
-  })
 
   useEffect(() => {
     const checkClassOnHover = (event) => {
@@ -88,13 +67,7 @@ const CustomCursor = () => {
   }, [isHovered]);
 
   return (
-    <>
-      <div className="cursor" ref={cursorRef}>
-
-
-      </div>
-      <div className="click" id="click-id" ref={clickRef}>{"{ CLICK }"}</div>
-    </>
+    <div className="cursor" ref={cursorRef}></div>
   );
 };
 

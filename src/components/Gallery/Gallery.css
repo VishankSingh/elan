@@ -17,8 +17,16 @@
     height: 100%;
     object-fit: cover;
     border: none;
-
 }
+
+.gallery img {
+    transition: scale 0.2s linear;
+}
+
+.gallery img:hover {
+    scale: 1.1;
+}
+
 
 .gallery-container p {
     font-size: 0.7vw;
