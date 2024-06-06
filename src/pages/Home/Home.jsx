@@ -1,8 +1,6 @@
 import './Home.css'
 import {gsap} from "gsap";
 import {useGSAP} from "@gsap/react";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {ReactLenis} from 'lenis/react'
 
 import themeVideo from "../../assets/Elan & ηVision 2024 Theme Reveal Video.mp4";
 import {useEffect, useRef} from "react";
@@ -11,7 +9,6 @@ import LinkHover from "../../components/linkhover/LinkHover.jsx";
 
 import Gallery from "../../components/Gallery/Gallery.jsx";
 
-gsap.registerPlugin(ScrollTrigger)
 
 function Home() {
   const themeVidRef = useRef(null)

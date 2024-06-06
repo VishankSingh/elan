@@ -5,11 +5,6 @@
   box-sizing: border-box;
   color: white;
   font-family: "Poppins", sans-serif;
-
-}
-
-body {
-  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -22,6 +17,31 @@ body {
   background: #ffffff;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html.lenis,
+html.lenis body {
+  height: 100%;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
 #root {
   overflow: hidden;
   cursor: none;
@@ -31,3 +51,5 @@ a {
   cursor: none !important;
   text-decoration: none;
 }
+
+

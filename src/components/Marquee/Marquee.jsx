@@ -7,7 +7,7 @@ function Marquee() {
     let currentScroll = 0
     let isScrollingDown = true
 
-    let tween = gsap.to(".marquee-part", {
+    let anim = gsap.to(".marquee-part", {
       xPercent: -100,
       repeat: -1,
       duration: 3,
@@ -19,12 +19,12 @@ function Marquee() {
     function func() {
       if (window.scrollY > currentScroll) {
         isScrollingDown = true
-        console.log(isScrollingDown)
+        //console.log(isScrollingDown)
       } else {
         isScrollingDown = false
-        console.log(isScrollingDown)
+        //console.log(isScrollingDown)
       }
-      gsap.to(tween, {
+      gsap.to(anim, {
         timeScale: isScrollingDown ? 1 : -1,
       })
       currentScroll = window.scrollY

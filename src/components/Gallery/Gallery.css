@@ -4,7 +4,7 @@
     box-sizing: border-box;
     position: relative;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     padding: 10vw 12vw 4vw 4vw;
     background-color: #0e0e0e;
     color: white;

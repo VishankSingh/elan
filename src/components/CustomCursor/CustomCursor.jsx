@@ -5,12 +5,12 @@ import {useGSAP} from "@gsap/react";
 
 const CustomCursor = () => {
   const cursorRef = useRef(null);
-  const [isHovered, setIsHovered] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   useGSAP(() => {
     if (isHovered === true) {
       gsap.to(".cursor", {
-        scale: 2,
+        scale: 1,
         duration: 0.1,
       })
     } else if (isHovered === false) {
@@ -38,33 +38,22 @@ const CustomCursor = () => {
   });
 
   useEffect(() => {
-    const checkClassOnHover = (event) => {
-      const hoveredElement = document.elementFromPoint(event.clientX, event.clientY);
-      if (hoveredElement && hoveredElement.classList.contains('cursor-link')) {
-        if (isHovered === false || isHovered === null) {
-          setIsHovered(true);
-        }
-      } else {
-        if (isHovered === true || isHovered === null) {
-          setIsHovered(false);
-        }
-      }
-    };
+    const hoverElements = document.querySelectorAll('.link-out');
+    const onMouseEnter = () => {setIsHovered(true)}
+    const onMouseLeave = () => {setIsHovered(false)}
 
-    const links = document.getElementsByClassName(".cursor-link")
-
-    Array.from(links, child => {
-      child.addEventListener('mouseover', checkClassOnHover);
-    });
-
-    document.addEventListener('mousemove', checkClassOnHover);
+    hoverElements.forEach(elem => {
+      elem.addEventListener("mouseenter", onMouseEnter);
+      elem.addEventListener("mouseleave", onMouseLeave);
+    })
 
     return () => {
-      Array.from(links, child => {
-        child.removeEventListener('mouseover', checkClassOnHover);
-      });
-    };
-  }, [isHovered]);
+      hoverElements.forEach(elem => {
+        elem.removeEventListener("mouseenter", onMouseEnter);
+        elem.removeEventListener("mouseleave", onMouseLeave);
+      })
+    }
+  })
 
   return (
     <div className="cursor" ref={cursorRef}></div>

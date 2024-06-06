@@ -4,8 +4,6 @@ import {gsap} from "gsap";
 
 
 function Navbar() {
-
-
   useGSAP(() => {
     gsap.from(".nav-link", {
       duration: 0.8,
@@ -16,7 +14,6 @@ function Navbar() {
       ease: "linear",
     })
   })
-
 
   return (
     <div className="nav-bar">
