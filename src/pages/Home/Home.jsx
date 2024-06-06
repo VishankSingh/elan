@@ -1,14 +1,13 @@
-import './Home.css'
+import {useEffect, useRef} from "react";
 import {gsap} from "gsap";
 import {useGSAP} from "@gsap/react";
 
-import themeVideo from "../../assets/Elan & ηVision 2024 Theme Reveal Video.mp4";
-import {useEffect, useRef} from "react";
+import './Home.css'
 
 import LinkHover from "../../components/linkhover/LinkHover.jsx";
-
 import Gallery from "../../components/Gallery/Gallery.jsx";
 
+import themeVideo from "../../assets/Elan & ηVision 2024 Theme Reveal Video.mp4";
 
 function Home() {
   const themeVidRef = useRef(null)
@@ -73,7 +72,6 @@ function Home() {
                src={themeVideo} className="theme-vid" ref={themeVidRef}
         ></video>
         <div className="container">
-
           <div className="elan" ref={lettersRef}>
             <div className="elan-letters">e</div>
             <div className="elan-letters">l</div>

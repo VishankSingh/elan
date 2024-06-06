@@ -1,5 +1,5 @@
 .footer {
-    background-color: #000000;
+    background-color: black;
     color: white;
     height: auto;
     width: 100vw;
@@ -25,27 +25,23 @@
     width: 20%;
     display: flex;
     flex-direction: column;
-    gap: 0vw;
 }
 
 .follow {
     width: 20%;
     display: flex;
     flex-direction: column;
-    gap: 0vw;
 }
 
 .connect {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 0vw;
     align-items: flex-end;
-
 }
 
 .top-title {
-    color: #ff7146;
+    color: #c5c5c5;
     padding-bottom: 3.6vh;
     font-size: 1.3vw;
 }
@@ -54,15 +50,12 @@
     font-size: 0.8vw;
 }
 
-
-
 .footer-link-out {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     height: 50%;
 }
-
 
 @media screen and (max-width: 800px) {
     .footer .container {
@@ -74,30 +67,22 @@
         row-gap: 10vw;
         column-gap: 15vw;
     }
-
     .About {
         width: 40%;
     }
-
     .follow {
         width: 40%;
     }
-
     .connect {
         width: 100%;
         gap: 1vw;
         align-items: flex-start;
-
     }
-
     .topTitle {
         padding-bottom: 3.6vh;
         font-size: 5.7vw;
     }
-
     .contactText {
         font-size: 3vw;
     }
 }
-
-

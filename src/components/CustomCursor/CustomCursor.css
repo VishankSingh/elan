@@ -4,18 +4,15 @@
     top: 50vh;
     left: 50vw;
     z-index: 9999;
-    background-color: #ffffff; /*99c4ff*/
+    background-color: white;
     mix-blend-mode: exclusion;
     border-radius: 50%;
     height: 0.35vw;
     width: 0.35vw;
 }
 
-
-
 @media screen and (max-width: 800px) {
     .cursor {
         display: none;
     }
 }
-

@@ -1,7 +1,8 @@
 import {useEffect, useRef, useState} from 'react';
-import './CustomCursor.css'
 import {gsap} from 'gsap';
 import {useGSAP} from "@gsap/react";
+
+import './CustomCursor.css'
 
 const CustomCursor = () => {
   const cursorRef = useRef(null);

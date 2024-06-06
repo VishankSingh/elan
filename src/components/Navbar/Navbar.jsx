@@ -1,7 +1,7 @@
-import './Navbar.css'
 import {useGSAP} from "@gsap/react";
 import {gsap} from "gsap";
 
+import './Navbar.css'
 
 function Navbar() {
   useGSAP(() => {
@@ -18,86 +18,74 @@ function Navbar() {
   return (
     <div className="nav-bar">
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Home&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Events&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Competitions&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Cryptex&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Workshops&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Accommodation&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Social Cause&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Sponsors&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="/elan">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Team&nbsp;</div>
         </a>
       </div>
 
       <div className="nav-link">
-
         <a href="#footer">
-          <div className="square"></div>
+          <div className="hover-overlay"></div>
           <div className="nav-link-text">&nbsp;Contact Us&nbsp;</div>
         </a>
       </div>
-
-
     </div>
   )
 }

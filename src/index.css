@@ -8,13 +8,13 @@
 }
 
 ::-moz-selection {
-  color: #000000;
-  background: #ffffff;
+  color: black;
+  background: white;
 }
 
 ::selection {
-  color: #000000;
-  background: #ffffff;
+  color: black;
+  background: white;
 }
 
 ::-webkit-scrollbar {
@@ -52,5 +52,3 @@ a {
   cursor: none !important;
   text-decoration: none;
 }
-
-

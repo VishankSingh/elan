@@ -1,5 +1,6 @@
 import {gsap} from 'gsap'
 import {useGSAP} from '@gsap/react';
+
 import './Marquee.css'
 
 function Marquee() {
@@ -17,13 +18,7 @@ function Marquee() {
     gsap.set(".marquee-inner", {xPercent: -50})
 
     function func() {
-      if (window.scrollY > currentScroll) {
-        isScrollingDown = true
-        //console.log(isScrollingDown)
-      } else {
-        isScrollingDown = false
-        //console.log(isScrollingDown)
-      }
+      isScrollingDown = window.scrollY > currentScroll;
       gsap.to(anim, {
         timeScale: isScrollingDown ? 1 : -1,
       })

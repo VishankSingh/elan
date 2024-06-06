@@ -1,6 +1,7 @@
 import {gsap} from "gsap";
-import "./Gallery.css"
 import {useRef} from "react";
+
+import "./Gallery.css"
 
 function Gallery() {
   const galleryContainerRef = useRef(null)
@@ -25,7 +26,6 @@ function Gallery() {
 
   function handleImageClick(e) {
     const imgSrc = e.target.src
-    //console.log(imgSrc)
 
     const imgNumber = imgSrc.match(/(\d+)\.jpg/)[1]
     galleryContainerRef.current.style.backgroundColor = colorArray[parseInt(imgNumber) - 1]
@@ -52,25 +52,25 @@ function Gallery() {
     <div className="gallery-container" ref={galleryContainerRef}>
       <div className="gallery">
         <div className="row">
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>1.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/1.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>2.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/2.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>3.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/3.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>4.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/4.jpg"} alt=""/>
@@ -78,25 +78,25 @@ function Gallery() {
           </div>
         </div>
         <div className="row">
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>5.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/5.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>6.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/6.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>7.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/7.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>8.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/8.jpg"} alt=""/>
@@ -104,25 +104,25 @@ function Gallery() {
           </div>
         </div>
         <div className="row">
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>9.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/9.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>10.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/10.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>11.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/11.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>12.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/12.jpg"} alt=""/>
@@ -130,25 +130,25 @@ function Gallery() {
           </div>
         </div>
         <div className="row">
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>13.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/13.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>14.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/14.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>15.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/15.jpg"} alt=""/>
             </div>
           </div>
-          <div className="item" onClick={() => handleImageClick(event)}>
+          <div className="item" onClick={(event) => handleImageClick(event)}>
             <div className="index"><p>16.</p></div>
             <div className="img">
               <img src={"https://raw.githubusercontent.com/VishankSingh/elan/main/src/assets/16.jpg"} alt=""/>

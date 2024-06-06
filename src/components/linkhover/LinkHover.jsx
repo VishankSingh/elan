@@ -1,9 +1,8 @@
 import {gsap} from "gsap";
+
 import './LinkHover.css'
 
-
 function LinkHover(props) {
-
   const handleMouseEnter = (div) => {
     gsap.to(div, {
       y: "-100%",
